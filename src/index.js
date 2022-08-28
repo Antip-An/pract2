@@ -11,12 +11,16 @@ import UserForm from "./pages/UserForm";
 import CathedraForm from "./pages/CathedraForm";
 import UtpRpForm from "./pages/UtpRpForm";
 import FormForm from "./pages/FormForm";
+import Home from "./pages/Home";
+import Half from "./pages/Half";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Page />}>
+          <Route path="/home" element={<Home />} />
+          <Route path="/half" element={<Half />} />
           <Route path="/users" element={<UserForm />} />
           <Route path="/courses" element={<CourseForm />} />
           <Route path="/cathedra" element={<CathedraForm />} />

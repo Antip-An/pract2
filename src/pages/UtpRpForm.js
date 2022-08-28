@@ -1,21 +1,20 @@
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
 
 function UtpRpForm() {
   return (
     <Form>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Email address</Form.Label>
-        <Form.Control type="text" placeholder="Enter email" />
-      </Form.Group>
+      <Button variant="primary" type="submit" href="/home">
+        Вернуться на главную
+      </Button>
 
-      <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Password" />
+      <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Label>Год</Form.Label>
+        <Form.Control type="number" />
       </Form.Group>
 
       <Button variant="primary" type="submit">
-        Submit
+        Сохранить
       </Button>
     </Form>
   );
